@@ -13,6 +13,13 @@ class Car extends class Vehicle{
     constructor(make, model, year, color, mileage) {
 
    
-    super(maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel, scheduleService)
+    super(make, model, year, color, mileage);
+    this.maximumPassengers
+    this.passenger
+    this.numberOfWheels
+    this.maximumSpeed
+    this.fuel
+    this.scheduleService
+    
 }
 }
