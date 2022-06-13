@@ -1,6 +1,6 @@
 module.import = {
     Vehicle
-} from './vehicle.js';
+} 
 
 //this includes the vehicle class as a module
 const VehicleModule = require("./vehicleBaseClass")
@@ -14,33 +14,33 @@ class Car extends class VehicleModule{
 
    
     super(make, model, year, color, mileage);
-    this.maximumPassengers = '5';
-    this.passenger = '0';
-    this.numberOfWheels = '4';
-    this.maximumSpeed = '160';
-    this.fuel = '10';
-    this.scheduleService = 'false';
+    this.maximumPassengers = 5;
+    this.passenger = 0;
+    this.numberOfWheels = 4;
+    this.maximumSpeed = 160;
+    this.fuel = 10;
+    this.scheduleService = false;
     
 }
 
-loadPassenger
+// loadPassenger
 
 loadPassenger (num) {
     if (this.passenger < this.maximumPassengers) {  
-        if ((num + this.passenger) <= this.maxPassengers) {
+        if ((num + this.passenger) <= this.maximumPassengers) {
             this.passenger = num;
             return this.passenger;
         }
         else {
-console.log (this.model = " " + this.make + " Not enough room.");
+console.log (this.model = ` ${this.make} Does not have enough room.`);
         }
     }
     else {
-            console.log(this.model + " " this.make + " Too full.");
+            console.log(this.model + " " + this.make + " Too full.");
         }
 
     }
-}
+
 
     start () {
         if (this.fuel > 0) {  
@@ -66,6 +66,6 @@ console.log (this.model = " " + this.make + " Not enough room.");
             return this.timeForMaintenance = false;
         }
     }
+}
     
-        
-    
+        {}       //I don't know why, but adding this bracket pair cleared up an error I was having...???
