@@ -69,3 +69,12 @@ console.log (this.model = ` ${this.make} Does not have enough room.`);
 }
     
         {}       //I don't know why, but adding this bracket pair cleared up an error I was having...???
+
+        let myTruck = new Truck('Rivian', 'R1T', '2024', 'black', 70000)
+
+myTruck.start()
+myTruck.loadPassenger(5)
+myTruck.stop()
+myTruck.checkService()
+
+console.log(myTruck)
