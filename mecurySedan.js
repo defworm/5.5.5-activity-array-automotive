@@ -22,9 +22,50 @@ class Car extends class VehicleModule{
     this.scheduleService = 'false';
     
 }
+
+loadPassenger
+
 loadPassenger (num) {
-    (if this.passenger < this.maximumPassengers) {  //leaving off here for the moment....
+    if (this.passenger < this.maximumPassengers) {  
+        if ((num + this.passenger) <= this.maxPassengers) {
+            this.passenger = num;
+            return this.passenger;
+        }
+        else {
+console.log (this.model = " " + this.make + " Not enough room.");
+        }
+    }
+    else {
+            console.log(this.model + " " this.make + " Too full.");
+        }
 
     }
 }
-}
+
+    start () {
+        if (this.fuel > 0) {  
+            console.log ('Engine Started.');
+            return this.started = true
+            }
+
+            else {
+                return this.started = false;
+    console.log ('Not Enough Fuel to Start.');
+    
+            }
+    }
+
+    scheduleService (mileage) {
+        if (this.mileage > 30000){
+
+            console.log ('Time for Maintenance!')
+            return this.timeForMaintenance = true;
+        }
+        else {
+            console.log ('Keep on Truckin!');
+            return this.timeForMaintenance = false;
+        }
+    }
+    
+        
+    
